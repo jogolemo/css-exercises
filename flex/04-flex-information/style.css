@@ -24,3 +24,45 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/* SOLUTION */
+
+/* 
+Note: I did not think of adding this to mine, but
+it was in the solution. I learned that if an image element
+is inside of a block-level element like a div, the
+text-align: center will ALSO center the image. great trick!
+
+body {
+  text-align: center;
+} 
+*/
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*
+  Note: this is how the solution did it. As you can see it
+  is much simpler than mine, but this would have only worked
+  if I included the additional style to body (as shown in the
+  comment above). I'm leaving this here as a note to myself.
+
+  max-width: 200px;
+  */
+}
